@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Ongoing - WebAnimeKu</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-film"></i>
+                <span>WebAnime<span class="gradient-text">Ku</span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html"><i class="fas fa-home"></i> Beranda</a></li>
+                <li><a href="anime-list.html"><i class="fas fa-list"></i> Daftar Anime</a></li>
+                <li><a href="ongoing.html" class="active"><i class="fas fa-spinner"></i> Ongoing</a></li>
+                <li><a href="completed.html"><i class="fas fa-check-circle"></i> Completed</a></li>
+                <li><a href="movies.html"><i class="fas fa-film"></i> Movies</a></li>
+                <li><a href="genre.html"><i class="fas fa-tags"></i> Genre</a></li>
+                <li><a href="schedule.html"><i class="fas fa-calendar"></i> Jadwal</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> Tentang</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Kontak</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>🔄 Anime <span class="gradient-text">Ongoing</span></h1>
+            <p>Anime yang masih tayang dan update terbaru</p>
+        </div>
+    </section>
+
+    <section class="anime-list-section">
+        <div class="container">
+            <div class="anime-grid" id="ongoingGrid"></div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="logo">
+                        <i class="fas fa-film"></i>
+                        <span>WebAnime<span class="gradient-text">Ku</span></span>
+                    </div>
+                    <p>Website streaming anime subtitle Indonesia terbaik dan terlengkap.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Menu</h4>
+                    <ul>
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="anime-list.html">Daftar Anime</a></li>
+                        <li><a href="ongoing.html">Ongoing</a></li>
+                        <li><a href="completed.html">Completed</a></li>
+                        <li><a href="movies.html">Movies</a></li>
+                        <li><a href="genre.html">Genre</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Informasi</h4>
+                    <ul>
+                        <li><a href="about.html">Tentang</a></li>
+                        <li><a href="contact.html">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Kontak</h4>
+                    <p><i class="fas fa-envelope"></i> info@webanimeku.com</p>
+                    <p><i class="fas fa-phone"></i> +62 812-3456-7890</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 <span class="gradient-text">WebAnimeKu</span>. Dibuat dengan <i class="fas fa-heart" style="color: #ff6b6b;"></i> oleh RayzeWanggy</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        const ongoingAnime = [
+            { title: "One Piece", genre: "adventure", status: "Ongoing", rating: "9.3", episode: "1100+", image: "https://img.anime47.com/thumbs/2023/01/one-piece.jpg", link: "https://samehadaku.vip/anime/one-piece/", description: "Petualangan bajak laut mencari harta karun One Piece." },
+            { title: "Attack on Titan", genre: "action", status: "Ongoing", rating: "9.2", episode: "87+", image: "https://img.anime47.com/thumbs/2021/01/attack-on-titan-final-season.jpg", link: "https://samehadaku.vip/anime/shingeki-no-kyojin/", description: "Manusia bertahan melawan raksasa pemakan manusia." },
+            { title: "Demon Slayer", genre: "action", status: "Ongoing", rating: "9.0", episode: "55+", image: "https://img.anime47.com/thumbs/2023/04/demon-slayer-swordsmith-village-arc.jpg", link: "https://samehadaku.vip/anime/kimetsu-no-yaiba/", description: "Petualangan memburu iblis dengan pedang air." },
+            { title: "Jujutsu Kaisen", genre: "action", status: "Ongoing", rating: "9.1", episode: "47+", image: "https://img.anime47.com/thumbs/2023/07/jujutsu-kaisen-season-2.jpg", link: "https://samehadaku.vip/anime/jujutsu-kaisen/", description: "Pertarungan melawan kutukan dengan kekuatan jujutsu." },
+            { title: "My Hero Academia", genre: "action", status: "Ongoing", rating: "8.9", episode: "138+", image: "https://img.anime47.com/thumbs/2022/10/my-hero-academia-season-6.jpg", link: "https://samehadaku.vip/anime/boku-no-hero-academia/", description: "Sekolah pahlawan dengan kemampuan super (Quirk)." },
+            { title: "Spy x Family", genre: "comedy", status: "Ongoing", rating: "8.8", episode: "37+", image: "https://img.anime47.com/thumbs/2023/10/spy-x-family-season-2.jpg", link: "https://samehadaku.vip/anime/spy-x-family/", description: "Keluarga palsu dengan misi rahasia yang kocak." },
+            { title: "Frieren", genre: "fantasy", status: "Ongoing", rating: "9.3", episode: "28", image: "https://img.anime47.com/thumbs/2023/10/frieren-beyond-journeys-end.jpg", link: "https://samehadaku.vip/anime/sousou-no-frieren/", description: "Perjalanan penyihir abadi setelah mengalahkan iblis." },
+            { title: "Mushoku Tensei", genre: "adventure", status: "Ongoing", rating: "8.7", episode: "37+", image: "https://img.anime47.com/thumbs/2023/07/mushoku-tensei-season-2.jpg", link: "https://samehadaku.vip/anime/mushoku-tensei/", description: "Reinkarnasi ke dunia fantasi dengan kehidupan baru." },
+            { title: "Re:Zero", genre: "fantasy", status: "Ongoing", rating: "8.8", episode: "50+", image: "https://img.anime47.com/thumbs/2024/01/rezero-season-3.jpg", link: "https://samehadaku.vip/anime/rezero/", description: "Pemuda yang bisa kembali ke waktu setelah mati." },
+            { title: "Blue Lock", genre: "sports", status: "Ongoing", rating: "8.7", episode: "24+", image: "https://img.anime47.com/thumbs/2022/10/blue-lock.jpg", link: "https://samehadaku.vip/anime/blue-lock/", description: "Striker egois berjuang menjadi striker terbaik dunia." },
+            { title: "That Time I Got Reincarnated as a Slime", genre: "fantasy", status: "Ongoing", rating: "8.7", episode: "48+", image: "https://img.anime47.com/thumbs/2021/01/tensei-shitara-slime-datta-ken.jpg", link: "https://samehadaku.vip/anime/tensei-shitara-slime-datta-ken/", description: "Reinkarnasi menjadi slime di dunia fantasi." },
+            { title: "The Rising of the Shield Hero", genre: "fantasy", status: "Ongoing", rating: "8.3", episode: "38+", image: "https://img.anime47.com/thumbs/2021/01/tate-no-yuusha-no-nariagari.jpg", link: "https://samehadaku.vip/anime/tate-no-yuusha-no-nariagari/", description: "Pahlawan perisai yang dikhianati." },
+            { title: "Kimi ni Todoke", genre: "romance", status: "Ongoing", rating: "8.4", episode: "38+", image: "https://img.anime47.com/thumbs/2024/01/kimi-ni-todoke-season-3.jpg", link: "https://samehadaku.vip/anime/kimi-ni-todoke/", description: "Gadis pemalu yang perlahan membuka hati." },
+            { title: "Rent-a-Girlfriend", genre: "romance", status: "Ongoing", rating: "7.8", episode: "36+", image: "https://img.anime47.com/thumbs/2022/07/rent-a-girlfriend-season-2.jpg", link: "https://samehadaku.vip/anime/kanojo-okarishimasu/", description: "Kisah cinta dengan gadis sewaan." }
+        ];
+
+        function renderOngoing() {
+            const grid = document.getElementById('ongoingGrid');
+            grid.innerHTML = ongoingAnime.map(anime => `
+                <div class="anime-card">
+                    <div class="anime-image">
+                        <img src="${anime.image}" alt="${anime.title}" onerror="this.src='https://via.placeholder.com/300x400/6c5ce7/ffffff?text=${encodeURIComponent(anime.title)}'">
+                        <div class="anime-rating">
+                            <i class="fas fa-star" style="color: #f1c40f;"></i>
+                            ${anime.rating}
+                        </div>
+                        <div class="anime-status ongoing">Ongoing</div>
+                        <div class="anime-overlay">
+                            <a href="${anime.link}" target="_blank" class="watch-btn">
+                                <i class="fas fa-play"></i> Nonton
+                            </a>
+                        </div>
+                    </div>
+                    <div class="anime-info">
+                        <h3>${anime.title}</h3>
+                        <div class="anime-meta">
+                            <span class="genre-tag ${anime.genre}">${anime.genre}</span>
+                            <span class="episode">${anime.episode}</span>
+                        </div>
+                        <p class="anime-desc">${anime.description}</p>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        document.addEventListener('DOMContentLoaded', renderOngoing);
+    </script>
+</body>
+</html>
