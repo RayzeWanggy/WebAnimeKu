@@ -84,4 +84,60 @@
                 <div class="footer-contact">
                     <h4>Kontak</h4>
                     <p><i class="fas fa-envelope"></i> info@webanimeku.com</p>
-                    <p><i class
+                    <p><i class="fas fa-phone"></i> +62 812-3456-7890</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 <span class="gradient-text">WebAnimeKu</span>. Dibuat dengan <i class="fas fa-heart" style="color: #ff6b6b;"></i> oleh RayzeWanggy</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        const movieAnime = [
+            { title: "Your Name", genre: "romance", status: "Movie", rating: "9.3", episode: "Movie", image: "https://img.anime47.com/thumbs/2020/01/kimi-no-na-wa.jpg", link: "https://samehadaku.vip/anime/kimi-no-na-wa/", description: "Film anime romantis yang fenomenal." },
+            { title: "Weathering With You", genre: "romance", status: "Movie", rating: "8.9", episode: "Movie", image: "https://img.anime47.com/thumbs/2020/01/weathering-with-you.jpg", link: "https://samehadaku.vip/anime/tenki-no-ko/", description: "Film romantis dengan sentuhan fantasi." },
+            { title: "A Silent Voice", genre: "drama", status: "Movie", rating: "9.1", episode: "Movie", image: "https://img.anime47.com/thumbs/2020/01/koe-no-katachi.jpg", link: "https://samehadaku.vip/anime/koe-no-katachi/", description: "Film tentang penyesalan dan pengampunan." },
+            { title: "Demon Slayer: Mugen Train", genre: "action", status: "Movie", rating: "9.0", episode: "Movie", image: "https://img.anime47.com/thumbs/2020/10/demon-slayer-mugen-train.jpg", link: "https://samehadaku.vip/anime/kimetsu-no-yaiba-movie-mugen-ressha-hen/", description: "Film lanjutan Demon Slayer yang epik." },
+            { title: "Jujutsu Kaisen 0", genre: "action", status: "Movie", rating: "8.9", episode: "Movie", image: "https://img.anime47.com/thumbs/2021/12/jujutsu-kaisen-0.jpg", link: "https://samehadaku.vip/anime/jujutsu-kaisen-0-movie/", description: "Film prekuel Jujutsu Kaisen." },
+            { title: "Spirited Away", genre: "fantasy", status: "Movie", rating: "9.2", episode: "Movie", image: "https://img.anime47.com/thumbs/2020/01/spirited-away.jpg", link: "https://samehadaku.vip/anime/sen-to-chihiro-no-kamikakushi/", description: "Film klasik Studio Ghibli yang legendaris." },
+            { title: "Princess Mononoke", genre: "fantasy", status: "Movie", rating: "9.1", episode: "Movie", image: "https://img.anime47.com/thumbs/2020/01/princess-mononoke.jpg", link: "https://samehadaku.vip/anime/mononoke-hime/", description: "Film epik Studio Ghibli tentang alam dan manusia." },
+            { title: "Howl's Moving Castle", genre: "fantasy", status: "Movie", rating: "9.0", episode: "Movie", image: "https://img.anime47.com/thumbs/2020/01/howls-moving-castle.jpg", link: "https://samehadaku.vip/anime/howls-moving-castle/", description: "Film fantasi romantis dari Studio Ghibli." },
+            { title: "My Neighbor Totoro", genre: "fantasy", status: "Movie", rating: "8.9", episode: "Movie", image: "https://img.anime47.com/thumbs/2020/01/my-neighbor-totoro.jpg", link: "https://samehadaku.vip/anime/tonari-no-totoro/", description: "Film klasik tentang persahabatan dengan makhluk hutan." },
+            { title: "Grave of the Fireflies", genre: "drama", status: "Movie", rating: "9.0", episode: "Movie", image: "https://img.anime47.com/thumbs/2020/01/grave-of-the-fireflies.jpg", link: "https://samehadaku.vip/anime/hotaru-no-haka/", description: "Film perang yang mengharukan dari Studio Ghibli." }
+        ];
+
+        function renderMovies() {
+            const grid = document.getElementById('moviesGrid');
+            grid.innerHTML = movieAnime.map(anime => `
+                <div class="anime-card">
+                    <div class="anime-image">
+                        <img src="${anime.image}" alt="${anime.title}" onerror="this.src='https://via.placeholder.com/300x400/6c5ce7/ffffff?text=${encodeURIComponent(anime.title)}'">
+                        <div class="anime-rating">
+                            <i class="fas fa-star" style="color: #f1c40f;"></i>
+                            ${anime.rating}
+                        </div>
+                        <div class="anime-status completed" style="background:#e74c3c;">Movie</div>
+                        <div class="anime-overlay">
+                            <a href="${anime.link}" target="_blank" class="watch-btn">
+                                <i class="fas fa-play"></i> Nonton
+                            </a>
+                        </div>
+                    </div>
+                    <div class="anime-info">
+                        <h3>${anime.title}</h3>
+                        <div class="anime-meta">
+                            <span class="genre-tag ${anime.genre}">${anime.genre}</span>
+                            <span class="episode">🎬 Movie</span>
+                        </div>
+                        <p class="anime-desc">${anime.description}</p>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        document.addEventListener('DOMContentLoaded', renderMovies);
+    </script>
+</body>
+    </html>
