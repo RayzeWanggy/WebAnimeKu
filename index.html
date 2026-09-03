@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebAnimeKu - Nonton Anime Sub Indo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎬</text></svg>">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-film"></i>
+                <span>WebAnime<span class="gradient-text">Ku</span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active"><i class="fas fa-home"></i> Beranda</a></li>
+                <li><a href="anime-list.html"><i class="fas fa-list"></i> Daftar Anime</a></li>
+                <li><a href="ongoing.html"><i class="fas fa-spinner"></i> Ongoing</a></li>
+                <li><a href="completed.html"><i class="fas fa-check-circle"></i> Completed</a></li>
+                <li><a href="movies.html"><i class="fas fa-film"></i> Movies</a></li>
+                <li><a href="genre.html"><i class="fas fa-tags"></i> Genre</a></li>
+                <li><a href="schedule.html"><i class="fas fa-calendar"></i> Jadwal</a></li>
+                <li><a href="about.html"><i class="fas fa-info-circle"></i> Tentang</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Kontak</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <span class="badge">🎬 #1 Anime Streaming</span>
+                <h1>Nonton Anime <span class="gradient-text">Subtitle Indonesia</span></h1>
+                <p>Temukan dan tonton anime favoritmu dengan kualitas terbaik. Update setiap hari!</p>
+                <div class="hero-buttons">
+                    <a href="anime-list.html" class="btn-primary">
+                        <i class="fas fa-play"></i> Mulai Nonton
+                    </a>
+                    <a href="genre.html" class="btn-secondary">
+                        <i class="fas fa-compass"></i> Jelajahi
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="number" data-target="500">0</span>
+                        <span class="label">Total Anime</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number" data-target="120">0</span>
+                        <span class="label">Ongoing</span>
+                    </div>
+                    <div class="stat">
+                        <span class="number" data-target="50">0</span>
+                        <span class="label">Movie</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="floating-card card1">
+                    <i class="fas fa-fire"></i>
+                    <span>Trending</span>
+                </div>
+                <div class="floating-card card2">
+                    <i class="fas fa-star"></i>
+                    <span>Top Rating</span>
+                </div>
+                <div class="floating-card card3">
+                    <i class="fas fa-clock"></i>
+                    <span>Update Hari Ini</span>
+                </div>
+                <div class="hero-illustration">
+                    <i class="fas fa-tv"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Genre Quick Access -->
+    <section class="genre-quick">
+        <div class="container">
+            <h2>🔥 <span class="gradient-text">Genre</span> Populer</h2>
+            <div class="genre-grid">
+                <a href="genre.html?genre=action" class="genre-card" style="background: linear-gradient(135deg, #e74c3c, #c0392b);">
+                    <i class="fas fa-fist-raised"></i>
+                    <span>Action</span>
+                </a>
+                <a href="genre.html?genre=adventure" class="genre-card" style="background: linear-gradient(135deg, #e67e22, #d35400);">
+                    <i class="fas fa-map"></i>
+                    <span>Adventure</span>
+                </a>
+                <a href="genre.html?genre=comedy" class="genre-card" style="background: linear-gradient(135deg, #f1c40f, #f39c12);">
+                    <i class="fas fa-laugh"></i>
+                    <span>Comedy</span>
+                </a>
+                <a href="genre.html?genre=drama" class="genre-card" style="background: linear-gradient(135deg, #9b59b6, #8e44ad);">
+                    <i class="fas fa-theater-masks"></i>
+                    <span>Drama</span>
+                </a>
+                <a href="genre.html?genre=fantasy" class="genre-card" style="background: linear-gradient(135deg, #3498db, #2980b9);">
+                    <i class="fas fa-dragon"></i>
+                    <span>Fantasy</span>
+                </a>
+                <a href="genre.html?genre=romance" class="genre-card" style="background: linear-gradient(135deg, #e91e63, #c2185b);">
+                    <i class="fas fa-heart"></i>
+                    <span>Romance</span>
+                </a>
+                <a href="genre.html?genre=sci-fi" class="genre-card" style="background: linear-gradient(135deg, #00bcd4, #0097a7);">
+                    <i class="fas fa-rocket"></i>
+                    <span>Sci-Fi</span>
+                </a>
+                <a href="genre.html?genre=sports" class="genre-card" style="background: linear-gradient(135deg, #ff5722, #e64a19);">
+                    <i class="fas fa-basketball-ball"></i>
+                    <span>Sports</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Anime -->
+    <section class="latest-anime">
+        <div class="container">
+            <div class="section-header">
+                <h2>📺 <span class="gradient-text">Update</span> Terbaru</h2>
+                <a href="anime-list.html" class="view-all">Lihat Semua <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="anime-grid" id="latestGrid">
+                <!-- Di-generate JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Ongoing Anime -->
+    <section class="ongoing-anime">
+        <div class="container">
+            <div class="section-header">
+                <h2>🔄 <span class="gradient-text">Ongoing</span> Minggu Ini</h2>
+                <a href="ongoing.html" class="view-all">Lihat Semua <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="anime-grid" id="ongoingGrid">
+                <!-- Di-generate JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>🎬 Siap <span class="gradient-text">Nonton</span> Anime?</h2>
+                <p>Temukan ribuan anime dengan subtitle Indonesia terbaik</p>
+                <a href="anime-list.html" class="btn-primary">
+                    <i class="fas fa-play"></i> Mulai Nonton Sekarang
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <div class="logo">
+                        <i class="fas fa-film"></i>
+                        <span>WebAnime<span class="gradient-text">Ku</span></span>
+                    </div>
+                    <p>Website streaming anime subtitle Indonesia terbaik dan terlengkap.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Menu</h4>
+                    <ul>
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="anime-list.html">Daftar Anime</a></li>
+                        <li><a href="ongoing.html">Ongoing</a></li>
+                        <li><a href="completed.html">Completed</a></li>
+                        <li><a href="movies.html">Movies</a></li>
+                        <li><a href="genre.html">Genre</a></li>
+                        <li><a href="schedule.html">Jadwal</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Informasi</h4>
+                    <ul>
+                        <li><a href="about.html">Tentang</a></li>
+                        <li><a href="contact.html">Kontak</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">DMCA</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Kontak</h4>
+                    <p><i class="fas fa-envelope"></i> info@webanimeku.com</p>
+                    <p><i class="fas fa-phone"></i> +62 812-3456-7890</p>
+                    <p><i class="fas fa-clock"></i> Update 24/7</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 <span class="gradient-text">WebAnimeKu</span>. Dibuat dengan <i class="fas fa-heart" style="color: #ff6b6b;"></i> oleh RayzeWanggy</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Data anime untuk ditampilkan di homepage
+        const featuredAnime = [
+            {
+                title: "Attack on Titan",
+                genre: "action",
+                status: "Ongoing",
+                rating: "9.2",
+                episode: "87+",
+                image: "https://img.anime47.com/thumbs/2021/01/attack-on-titan-final-season.jpg",
+                link: "https://samehadaku.vip/anime/shingeki-no-kyojin/"
+            },
+            {
+                title: "Demon Slayer",
+                genre: "action",
+                status: "Ongoing",
+                rating: "9.0",
+                episode: "55+",
+                image: "https://img.anime47.com/thumbs/2023/04/demon-slayer-swordsmith-village-arc.jpg",
+                link: "https://samehadaku.vip/anime/kimetsu-no-yaiba/"
+            },
+            {
+                title: "One Piece",
+                genre: "adventure",
+                status: "Ongoing",
+                rating: "9.3",
+                episode: "1100+",
+                image: "https://img.anime47.com/thumbs/2023/01/one-piece.jpg",
+                link: "https://samehadaku.vip/anime/one-piece/"
+            },
+            {
+                title: "Jujutsu Kaisen",
+                genre: "action",
+                status: "Ongoing",
+                rating: "9.1",
+                episode: "47+",
+                image: "https://img.anime47.com/thumbs/2023/07/jujutsu-kaisen-season-2.jpg",
+                link: "https://samehadaku.vip/anime/jujutsu-kaisen/"
+            },
+            {
+                title: "Spy x Family",
+                genre: "comedy",
+                status: "Ongoing",
+                rating: "8.8",
+                episode: "37+",
+                image: "https://img.anime47.com/thumbs/2023/10/spy-x-family-season-2.jpg",
+                link: "https://samehadaku.vip/anime/spy-x-family/"
+            },
+            {
+                title: "Frieren",
+                genre: "fantasy",
+                status: "Ongoing",
+                rating: "9.3",
+                episode: "28",
+                image: "https://img.anime47.com/thumbs/2023/10/frieren-beyond-journeys-end.jpg",
+                link: "https://samehadaku.vip/anime/sousou-no-frieren/"
+            }
+        ];
+
+        const ongoingAnime = [
+            {
+                title: "One Piece",
+                genre: "adventure",
+                status: "Ongoing",
+                rating: "9.3",
+                episode: "1100+",
+                image: "https://img.anime47.com/thumbs/2023/01/one-piece.jpg",
+                link: "https://samehadaku.vip/anime/one-piece/"
+            },
+            {
+                title: "Attack on Titan",
+                genre: "action",
+                status: "Ongoing",
+                rating: "9.2",
+                episode: "87+",
+                image: "https://img.anime47.com/thumbs/2021/01/attack-on-titan-final-season.jpg",
+                link: "https://samehadaku.vip/anime/shingeki-no-kyojin/"
+            },
+            {
+                title: "Demon Slayer",
+                genre: "action",
+                status: "Ongoing",
+                rating: "9.0",
+                episode: "55+",
+                image: "https://img.anime47.com/thumbs/2023/04/demon-slayer-swordsmith-village-arc.jpg",
+                link: "https://samehadaku.vip/anime/kimetsu-no-yaiba/"
+            },
+            {
+                title: "Jujutsu Kaisen",
+                genre: "action",
+                status: "Ongoing",
+                rating: "9.1",
+                episode: "47+",
+                image: "https://img.anime47.com/thumbs/2023/07/jujutsu-kaisen-season-2.jpg",
+                link: "https://samehadaku.vip/anime/jujutsu-kaisen/"
+            }
+        ];
+
+        function renderAnimeGrid(containerId, animeList) {
+            const container = document.getElementById(containerId);
+            if (!container) return;
+            
+            container.innerHTML = animeList.map(anime => `
+                <div class="anime-card">
+                    <div class="anime-image">
+                        <img src="${anime.image}" alt="${anime.title}" onerror="this.src='https://via.placeholder.com/300x400/6c5ce7/ffffff?text=${encodeURIComponent(anime.title)}'">
+                        <div class="anime-rating">
+                            <i class="fas fa-star" style="color: #f1c40f;"></i>
+                            ${anime.rating}
+                        </div>
+                        <div class="anime-status ${anime.status === 'Ongoing' ? 'ongoing' : 'completed'}">
+                            ${anime.status}
+                        </div>
+                        <div class="anime-overlay">
+                            <a href="${anime.link}" target="_blank" class="watch-btn">
+                                <i class="fas fa-play"></i> Nonton
+                            </a>
+                        </div>
+                    </div>
+                    <div class="anime-info">
+                        <h3>${anime.title}</h3>
+                        <div class="anime-meta">
+                            <span class="genre-tag ${anime.genre}">${anime.genre}</span>
+                            <span class="episode">${anime.episode}</span>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            renderAnimeGrid('latestGrid', featuredAnime);
+            renderAnimeGrid('ongoingGrid', ongoingAnime);
+        });
+    </script>
+</body>
+</html>
